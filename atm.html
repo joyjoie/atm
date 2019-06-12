@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        var Balance = 150000;
+        var Deposit =0;
+        var max_dep;
+        var dep_freq;
+        var max_tran;
+        var Withdrawal =0;
+        var choice;
+        var w_day;
+        var w_trans;
+        var w_freq;
+        var Quit = true;
+        var End;
+
+        function Atm(Balance, Deposit, Withdrawal, Quit) {
+            
+         prompt("Enter menu option as follows Balance, Deposit, Withdrawal, Quit")
+        }
+            if (choice == "Balance") {
+                prompt("Balance , Add Deposit?"+" "+Balance)
+            }
+            else
+                prompt("Balance"+Balance);
+            if (choice == "Deposit" && max_dep <= 150000 && dep_freq <= 4 && max_tran <=40000) {
+                prompt("Deposit ="+" "+Balance +Deposit)
+            }
+            else
+            prompt("Deposit"+" "+Balance +Deposit);
+
+            if (choice == "Withdrawal"&& w_day <=50000 && w_freq<=3 && w_trans <=20000) {
+                prompt("Balance after Withdrawal"+Balance -Withdrawal)
+                
+
+            }
+            else
+            prompt("You have exceeded the limit");
+
+            if (choice == "Quit") {
+                confirm("Are you sure you want to exit");
+    
+            } else
+                confirm("Are you sure you want to quit?");
+    
+    
+        
+    </script>
+
+</head>
+
+<body>
+    <div style="margin: 2px auto; width: 1000px";>
+        <button onclick="Atm" id="atm">Click me</button>
+    </div>
+</body>
+
+</html>
